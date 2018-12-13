@@ -1,13 +1,14 @@
-x = 3              # a whole number
-f = 3.1415926      # a floating point number
-name = "Python"    # a string
+def is_leap(year):
+    leap = False
 
-print(x)
-print(f)
-print(name)
+    # Write your logic here
+    if year % 4 == 0:
+        if year % 100 == 0 and year % 400 != 0:
+            return leap
+        return not leap
+    else:
+        return leap
 
-combination = name + " " + name
-print(combination)
 
-sum = f + f
-print(sum)
+year = int(input())
+print(is_leap(year))
