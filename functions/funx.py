@@ -38,6 +38,9 @@ f = make_incrementor(42)
 print(f(1))
 print(f(2))
 
+if __name__ == '__main__':
+    print(100)
+
 # print(func(1))
 # print(func(2))
 

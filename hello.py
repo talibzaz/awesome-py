@@ -1,14 +1,11 @@
-def is_leap(year):
-    leap = False
+import sys
 
-    # Write your logic here
-    if year % 4 == 0:
-        if year % 100 == 0 and year % 400 != 0:
-            return leap
-        return not leap
-    else:
-        return leap
+import test
+import functions.funx as fn
 
+s = "\n"
+s1 = ("a", "b", "c")
 
-year = int(input())
-print(is_leap(year))
+print(s.join(s1))
+
+fn.parrot(sys.argv[1])
