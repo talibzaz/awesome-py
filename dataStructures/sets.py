@@ -9,8 +9,17 @@ a = set(basket)
 
 print(a)
 
-dc = {'jack': 4097, 'Mack': 2000}
-dc['jack'] = 1
+states = {
+    'Jammu and Kashmir': 'J&K',
+    'Punjab': 'PB',
+    'Madhya Pradesh': 'MP',
+    'Maharashtra': 'MH'
+}
 
-for k, v in dc.items():
-    print(k,v)
+for k, v in states.items():
+    print(k, v)
+
+state = states.get('Maharashtra')
+print(state)
+print(states['Punjab'])
+

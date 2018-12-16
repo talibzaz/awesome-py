@@ -1,6 +1,20 @@
-yes_votes = 42_423_896
-no_votes = 16_156_222
+def scope_test():
+    def do_local():
+        spam = 'local spam'
+    def do_nonlocal():
+        nonlocal spam
+        spam = 'non local spam'
+    def do_global():
+        global spam
+        spam = 'global spam'
 
-x = 3 * 2 ** 30
-print(f'the value of ues votes {yes_votes}')
+    spam = 'test spam'
+    do_local()
+    print("After local: ", spam)
+    do_nonlocal()
+    print("After non local: ", spam)
+    do_global()
+    print("After global: ", spam)
 
+scope_test()
+print("In global scope: ", spam)

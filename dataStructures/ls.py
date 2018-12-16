@@ -7,7 +7,7 @@ vec = [-10, -4, 0, 4, 16]
 
 print(squares)
 
-# print([(x, x*2) for x in vec])
+print([(x, x*2) for x in vec])
 
 # print([round(pi, i) for i in range(1, 6)])
 
