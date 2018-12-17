@@ -16,3 +16,7 @@ print(queue)
 print(queue.popleft())
 print(queue.pop())
 print(queue)
+
+arr = [1, 5, 9, 7]
+
+print(sum(arr))

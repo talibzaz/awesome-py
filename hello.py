@@ -1,11 +1,20 @@
-import sys
+from itertools import combinations
 
-import test
-import functions.funx as fn
+m, s, n = input(), input().split(), int(input())
+t = list(combinations(s, n))
 
-s = "\n"
-s1 = ("a", "b", "c")
+print("s: ", s)
+print("t: ", t)
+f = [i for i in t if 'a' in i]
+print(f)
+print(len(f)/len(t))
 
-print(s.join(s1))
 
-fn.parrot(sys.argv[1])
+# from collections import OrderedDict
+#
+# word = 'AABCAADAD'
+#
+# result = [word[i:i+3] for i in range(0, len(word), 3)]
+#
+# for i in result:
+#     print("".join(OrderedDict.fromkeys(i)))

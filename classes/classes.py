@@ -40,6 +40,8 @@ if __name__ == '__main__':
 
     buzz.add_tricks('can roll over')
     tom.add_tricks('can swim')
+    buzz.age = 15
 
     print(buzz.tricks)
+    print(buzz.age)
     print(tom.tricks)
