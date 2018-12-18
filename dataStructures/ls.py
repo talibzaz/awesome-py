@@ -18,3 +18,18 @@ matrix = [
 print([[row[i] for row in matrix] for i in range(4)])
 
 print(list(zip(*matrix)))
+
+list2 = []
+
+list2.extend(vec)
+print("list2: ", list2)
+
+vowels = 'aeiou'
+print("vowels: ", list(vowels))
+
+def calculateSquare(n):
+    return n*n
+
+res = map(calculateSquare, list2)
+
+print("res: ", set(res))
