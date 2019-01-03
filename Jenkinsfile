@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile sources/hello.py sources/calc.py'
+                sh 'python -m py_compile /hello.py sources/calc.py'
             }
         }
     }
